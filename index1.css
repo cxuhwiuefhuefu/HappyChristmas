@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@font-face{
+    font-family: 'myFirstFont';
+    /* src: url('../Bleeding_Cowboys.ttf'); */
+    src: url('./Bleeding_Cowboys.ttf')
+}
+/* 字体下载地址: https://www.w3cplus.com/content/css3-font-face  */
+.title{
+    margin: 50px auto;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 40px;
+    overflow: hidden;
+    font-size: 15px;
+    font-style: italic; 
+    font-family: 'myFirstFont';
+    color: red;
+}
+@keyframes myMove{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+
+
+#text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 100px;
+    background: red;
+}
+
+img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
