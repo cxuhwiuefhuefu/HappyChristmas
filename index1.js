@@ -31,7 +31,7 @@ function textAppear() {
     // var str = '逍遥哥哥从小就没有亲人, 外表上装的很坚强,\
     //            其实, 内心比任何人都脆弱, 所有爱你的人都已经走了,\
     //            我不要留逍遥哥哥一个人在世上, 我要一直陪着你......',
-    var str = '平安夜快乐'
+    var str = '小思仪小朋友 平安夜快乐'
         len = str.length,
         i = 0,
         span = document.getElementsByTagName('span')[0];
@@ -67,18 +67,18 @@ function fallLove() {
         minSize = 10, // 爱心最小尺寸
         endTop = dh - 100, // 最后坐标位置的Y
         newOne = 100; // 隔多长时间生成的
-    
-    console.log(dw, dh);    
-
-    
+        
+         
     // 克隆方法 隔段时间生成    
     setInterval(function() {
 
         var size = Math.random() * maxSize + minSize,
-            startLeft = Math.floor(Math.random() * dw), // // 开始坐标位置的X 
+            startLeft = Math.floor(Math.random() * dw) - size < dw ?  Math.floor(Math.random() * dw) - size :  Math.floor(Math.random() * dw), // // 开始坐标位置的X 
             opacity = Math.random(), // 生成透明度
             endLeft = Math.floor(Math.random() * dw), // 最后坐标位置的X
             durationTime = 5000 * Math.random() + 3000; // 运动的时间 大小不一样所以运动速度也不一样
+        
+            console.log(startLeft);
        
         $(loveShape).clone(true).appendTo($('body')).css({
             'left': startLeft,
@@ -97,7 +97,9 @@ function fallLove() {
     
 }
 fallLove();
-
+var dw = $(window).width(), // 窗口的宽度苹果苹果
+    dh = $(window).height(); // 宽口的高度
+console.log(dw, dh);   
 // 怎么设置图案的大小以及颜色 可以用font-size 和引入字体类似
 
 

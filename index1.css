@@ -11,9 +11,9 @@
 }
 .title{
     margin: 10px auto;
-    width: 200px;
-    height: 50px;
-    line-height: 50px;
+    width: 55vw;
+    height: 5vh;   
+    line-height: 5vh;
     border-radius: 40px;
     overflow: hidden;
     font-size: 15px;
@@ -33,19 +33,18 @@
 
 
 #text {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
+    margin: 0 auto  ;
+    width: 80vw;    
     height: 100px;
     background: red;
 }
 
 img {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 80%;
+    /* z-index: -1 ; */
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 0; */
+    width: 100vw;
+    height: 80vh;
 }
 
