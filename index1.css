@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+html {
+    font-size: 3px;;
+}
 body,html{
     position:fixed;
     top:0;
@@ -43,6 +45,13 @@ body,html{
     width: 80vw;    
     height: 100px;
     background: red;
+    text-align: center;
+    line-height: 100px;
+}
+
+#context {
+    font-size: 3rem;
+    color: blueviolet;
 }
 
 img {

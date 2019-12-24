@@ -31,7 +31,9 @@ function textAppear() {
     // var str = '逍遥哥哥从小就没有亲人, 外表上装的很坚强,\
     //            其实, 内心比任何人都脆弱, 所有爱你的人都已经走了,\
     //            我不要留逍遥哥哥一个人在世上, 我要一直陪着你......',
-    var str = '小思仪小朋友 平安夜快乐'
+    var str = "小思仪\
+               很幸运能遇到你\
+               以后的平安夜都由我陪你过吧",
         len = str.length,
         i = 0,
         span = document.getElementsByTagName('span')[0];
