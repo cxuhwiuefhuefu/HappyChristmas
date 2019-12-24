@@ -33,7 +33,7 @@ function textAppear() {
     //            我不要留逍遥哥哥一个人在世上, 我要一直陪着你......',
     var str = "小思仪\
                很幸运能遇到你\
-               以后的平安夜都由我陪你过吧",
+               以后的平安夜都由我陪你过",
         len = str.length,
         i = 0,
         span = document.getElementsByTagName('span')[0];
