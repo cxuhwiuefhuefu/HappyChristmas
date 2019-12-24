@@ -52,6 +52,15 @@ textAppear();
 
 
 
+// 生成随机数
+// 这里有一个公式：Math.floor(Math.random()*(max-min+1)+min);
+function returnRandom(max, min) {
+    return Math.floor(Math.random()*(max - min + 1) + min);
+}
+// console.log(returnRandom(0, 5));
+
+
+
 
 // 爱心飘落  爱心形状不一 位置不一样 大小不一样 飘落的速度也不一样   
 function fallLove() {
@@ -66,9 +75,12 @@ function fallLove() {
         maxSize = 50, // 爱心最大尺寸
         minSize = 10, // 爱心最小尺寸
         endTop = dh - 100, // 最后坐标位置的Y
-        newOne = 100; // 隔多长时间生成的
+        newOne = 100, // 隔多长时间生成的
+        color = ['#ff3feb', '#ffff44', '#ffbc4b', '#ff063a', '#fffefd', '#ffb18a', '#ff01f1']; // 花的颜色
+     
+
+  
         
-         
     // 克隆方法 隔段时间生成    
     setInterval(function() {
 
@@ -76,14 +88,14 @@ function fallLove() {
             startLeft = Math.floor(Math.random() * dw) - size < dw ?  Math.floor(Math.random() * dw) - size :  Math.floor(Math.random() * dw), // // 开始坐标位置的X 
             opacity = Math.random(), // 生成透明度
             endLeft = Math.floor(Math.random() * dw), // 最后坐标位置的X
-            durationTime = 5000 * Math.random() + 3000; // 运动的时间 大小不一样所以运动速度也不一样
-        
-            console.log(startLeft);
+            durationTime = 5000 * Math.random() + 3000, // 运动的时间 大小不一样所以运动速度也不一样
+            randomColor = color[returnRandom(0, color.length)];
        
         $(loveShape).clone(true).appendTo($('body')).css({
             'left': startLeft,
             'font-size': size,
-            'opacity': opacity
+            'opacity': opacity,
+            'color': randomColor
         }).animate({
             'top': endTop + 'px',
             'left': endLeft + 'px',
@@ -99,7 +111,7 @@ function fallLove() {
 fallLove();
 var dw = $(window).width(), // 窗口的宽度苹果苹果
     dh = $(window).height(); // 宽口的高度
-console.log(dw, dh);   
+// console.log(dw, dh);     
 // 怎么设置图案的大小以及颜色 可以用font-size 和引入字体类似
 
 

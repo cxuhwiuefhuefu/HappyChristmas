@@ -46,10 +46,6 @@ body,html{
 }
 
 img {
-    /* z-index: -1 ; */
-    /* position: absolute; */
-    /* left: 0; */
-    /* top: 0; */
     width: 100vw;
     height: 80vh;
 }

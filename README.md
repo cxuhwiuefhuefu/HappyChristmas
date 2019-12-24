@@ -1,12 +1,8 @@
 # 前言
 #### 偶然在网上看到表白代码 感觉很浪漫 虽然楼主现在还没女朋友 但是我有女神呀 所以第一个浪漫的表白代码就给我的女神吧
 # 实现的功能
-- [x] 标题来回移动 
-- [x] 图片旋转 
-- [x] 文字逐渐出现 
-- [x] 爱心飘落的效果 
-- [x] 音乐播放
-# 效果图
-![image](https://github.com/cxuhwiuefhuefu/Romantic-Love/blob/master/img/love2.gif)
-# 收获 
-#### 加强了对jQuery和CSS3新属性的应用 功能尽量模块化 也学会新的标签marquee 这个标签在IE8的时候被废弃了 关于一些详细的代码解说以及注释都在我们代码中 感兴趣的可以去看看 
+## 移动端适配
+## 移动端空白
+## 禁止用户缩放
+## 生成指定随机范围数
+## 在Chrome中页面首次加载的时候有事会出现以上报错：Uncaught（in promise）DOMException：play（）
